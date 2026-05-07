@@ -100,3 +100,12 @@ This lab includes examples of common secret types:
 - [OWASP Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html)
 - [Pre-commit Documentation](https://pre-commit.com/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- ## Reflection
+- What kinds of secrets were detected?
+During this lab i have seen the key of various code such as AWS keys,Datbase cendential,API keys ,SSh etc where their secerts are unlocked and can be accessible to everyone 
+
+How would this affect a production app?
+This may give access to the hacker where they can have access to the main system where they can misplace the password hack the entire system and do whatever they wanted to do 
+
+What tools or habits will help you avoid leaking secrets in the future?
+By masking the py file or by not leaving the real passowrd there,by using.env file to keep the data secrete and by using gitleaks command precommit hook which help to  avoid risk to the system by denying the deployment without keeping it safe  
