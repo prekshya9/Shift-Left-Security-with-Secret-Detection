@@ -6,24 +6,29 @@ CHALLENGE: Find and fix all the secrets in this file!
 """
 
 # AWS Credentials (Format: AKIA + 16 characters)
-AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
-AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+#This is the key password for the cloud keeping it here can give acess to anyone and have control over our servers
+AWS_ACCESS_KEY = "MASKED_ACCESS_KEY"
+AWS_SECRET_KEY = "MASKED_SECRET_KEY"
 
 # Database Credentials
-DB_PASSWORD = "super_secret_db_password_123"
-DB_CONNECTION = "postgresql://user:password123@localhost:5432/mydb"
+# It has login information of database its risky cause anyone can have this access which can cause  information lekage
+DB_PASSWORD = "MASKED_PASSWORD"
+DB_CONNECTION = "postgresql://user:MASKED_PASSWORD@localhost:5432/mydb"
 
 # API Keys
-STRIPE_API_KEY = "sk_test_51HxEXAMPLE"
-GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnopqrstuvwxyz"
+#It is the code talk between two parties it is risky cause someone can interfere between the connection like man in the middle 
+STRIPE_API_KEY = "REPLACED_BY_CONFIG"
+GITHUB_TOKEN = "MASKED_GITHUB_TOKEN"
 
 # JWT Secret
-JWT_SECRET = "my-super-secret-jwt-key-that-should-not-be-here"
+#It is used to verify user login keeping it here is risky cause hacker can dupliacte the user  
+JWT_SECRET = "MASKED_SIGNING_KEY"
 
 # SSH Private Key (partial example)
+#This is a digital signature having it here can risk of whole system login without futhure login access
 SSH_PRIVATE_KEY = """
 -----BEGIN RSA PRIVATE KEY-----
-MIIEpAIBAAKCAQEA1c7+9z5Pad7OejecsQ0buoLoWQBXz6XhCr9c5Y0Bk0w
+[REMOVED_FOR_SECURITY_REASON]
 -----END RSA PRIVATE KEY-----
 """
 
